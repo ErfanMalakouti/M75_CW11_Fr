@@ -1,0 +1,303 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+header {
+  overflow-x: hidden;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(233, 23, 233), purple);
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 0.6fr 0.2fr;
+  gap: 10px;
+}
+.menu2 {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+  height: 2em;
+  border-radius: 10px;
+  margin: 40px;
+  background-color: rgb(255, 187, 0);
+}
+.bala {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+  gap: 10px;
+}
+.top {
+  display: flex;
+  gap: 10px;
+}
+.top .Taco-joint {
+  position: relative;
+  width: 100%;
+}
+.top .Taco-joint .Terry {
+  position: absolute;
+  background-color: rgb(255, 187, 0);
+  left: 20px;
+  top: 40%;
+  padding: 5px;
+  font-size: 35px;
+}
+.top .Taco-joint .pretty {
+  position: absolute;
+  background-color: rgb(255, 187, 0);
+  left: 20px;
+  top: 55%;
+  padding: 5px;
+}
+.dolar {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.dolar .price {
+  background-color: rgb(255, 187, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dolar .price .number {
+  font-size: 60px;
+  font-weight: bold;
+}
+.price p {
+  font-weight: bold;
+  opacity: 0.8;
+  font-size: 15px;
+}
+
+article {
+  display: grid;
+  grid-template-rows: 0.1fr 0.8fr;
+  gap: 20px;
+}
+
+.main-1 {
+  display: none;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 5px 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Tacos {
+  background-color: rgb(255, 187, 0);
+  padding: 0.8rem;
+}
+
+.Bees {
+  background-color: rgb(255, 187, 0);
+  padding: 0.8rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.Wines {
+  background-color: rgb(255, 187, 0);
+  padding: 0.8rem;
+}
+
+.Desserts {
+  background-color: rgb(255, 187, 0);
+  padding: 0.8rem;
+}
+
+.Reservation {
+  background-color: rgb(255, 187, 0);
+  padding: 0.8rem;
+}
+
+.main-2 {
+  display: grid;
+  margin-top: 10px;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px;
+}
+
+.texas {
+  background-color: rgb(192, 191, 189);
+  padding: 1.2em;
+}
+
+.Beer {
+  background-color: rgb(192, 191, 189);
+  padding: 1.2em;
+}
+.wine {
+  background-color: rgb(192, 191, 189);
+  padding: 1.2em;
+}
+.Music {
+  background-color: rgb(192, 191, 189);
+  padding: 1.2em;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#offer {
+  background-color: white;
+  text-align: left;
+  display: grid;
+  padding: 30px 50px;
+  margin: 0px 50px;
+  margin-top: -200px;
+  grid-template-columns: 1.5fr 2fr;
+}
+#offer input {
+  border: none;
+  text-align: center;
+  background-color: rgb(255, 187, 0);
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+#info {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-flow: column wrap;
+  gap: 20px;
+  font-weight: bold;
+}
+.title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#instant {
+  margin: 20px 0;
+  position: relative;
+}
+#instant:before {
+  content: "";
+  display: block;
+  background-image: linear-gradient(
+    to left,
+    transparent,
+    rgba(255, 187, 0, 0.742),
+    rgb(255, 187, 0)
+  );
+  width: 600px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  top: 50%;
+}
+#instant:after {
+  content: "";
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 187, 0, 0.742),
+    rgb(255, 187, 0)
+  );
+  width: 600px;
+  height: 5px;
+  position: absolute;
+  right: 120px;
+  top: 50%;
+}
+#pic-box {
+  height: 10%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1600px) {
+  .main-1 {
+    display: grid;
+  }
+  .menu {
+    display: none;
+  }
+  #instant:before {
+    width: 700px;
+  }
+  #instant:after {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .main-1 {
+    display: grid;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #instant:before {
+    width: 400px;
+  }
+  #instant:after {
+    width: 400px;
+  }
+  #pic-box {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 40px;
+  }
+  .texas {
+    padding: 0;
+  }
+
+  .Beer {
+    padding: 0;
+  }
+  .wine {
+    padding: 0;
+  }
+  .Music {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  #instant:before {
+    width: 250px;
+  }
+  #instant:after {
+    width: 250px;
+  }
+  #pic-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .main-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  header {
+    grid-template-rows: 0.1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  #pic-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
