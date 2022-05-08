@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(8, 80px);
+  grid-template-areas:
+    "Photoshop InVision UX . . ."
+    ". Design Design . Rust ."
+    ". Design Design PHP HTML ."
+    ". JavaScript Layout Web-Dev Web-Dev ."
+    ". Ruby CSS Web-Dev Web-Dev ."
+    ". Go Motion Motion Maya Nuke"
+    ". . Motion Motion Cinema-4D ."
+    ". . . After-Effect . .";
+  gap: 5px;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.Photoshop {
+  background-color: dodgerblue;
+  grid-area: Photoshop;
+}
+.InVision {
+  background-color: dodgerblue;
+  grid-area: InVision;
+}
+.UX {
+  background-color: dodgerblue;
+  grid-area: UX;
+}
+.Design {
+  background-color: dodgerblue;
+  grid-area: Design;
+}
+.Layout {
+  background-color: dodgerblue;
+  grid-area: Layout;
+}
+
+.JavaScript {
+  background-color: teal;
+  grid-area: JavaScript;
+}
+
+.Ruby {
+  background-color: teal;
+  grid-area: Ruby;
+}
+
+.CSS {
+  background-color: teal;
+  grid-area: CSS;
+}
+
+.Go {
+  background-color: teal;
+  grid-area: Go;
+}
+
+.PHP {
+  background-color: teal;
+  grid-area: PHP;
+}
+
+.HTML {
+  background-color: teal;
+  grid-area: HTML;
+}
+
+.Rust {
+  background-color: teal;
+  grid-area: Rust;
+}
+
+.Web-Dev {
+  background-color: teal;
+  grid-area: Web-Dev;
+}
+
+.Motion {
+  background-color: purple;
+  grid-area: Motion;
+}
+.Maya {
+  background-color: purple;
+  grid-area: Maya;
+}
+.Nuke {
+  background-color: purple;
+  grid-area: Nuke;
+}
+.Cinema-4D {
+  background-color: purple;
+  grid-area: Cinema-4D;
+}
+.After-Effect {
+  background-color: purple;
+  grid-area: After-Effect;
+}
